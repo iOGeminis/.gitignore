@@ -1,2 +1,3 @@
 # .gitignore
-# Sabiaduria-IAH
+# ignorar .gitignore  licencia Mit 
+.gitignoi
