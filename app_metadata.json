@@ -1,0 +1,47 @@
+{
+  "appId": "com.google.android.calculator",
+  "title": "Calculator",
+  "url": "https://play.google.com/store/apps/details?id=com.google.android.calculator",
+  "developer": "Google LLC",
+  "developerId": "5700313618786177705",
+  "developerDevProfile": "g.dev/5700313618786177705MX",
+  "developerEmail": "apps-help@google.com",
+  "developerAlternativeEmail": "Workspace.iah@gmail.com",
+  "developerWebsite": "https://support.google.com/calculator",
+  "developerAddress": "1600 Amphitheatre Parkway, Mountain View 94043",
+  "score": 4.32,
+  "ratings": 1234567,
+  "reviewCount": 98765,
+  "histogram": [50000, 30000, 40000, 150000, 964567],
+  "installs": "1,000,000,000+",
+  "minInstalls": 1000000000,
+  "realInstalls": 1523456789,
+  "price": 0,
+  "free": true,
+  "currency": "USD",
+  "genre": "Tools",
+  "genreId": "TOOLS",
+  "categories": [
+    {
+      "name": "Tools",
+      "id": "TOOLS"
+    }
+  ],
+  "icon": "https://play-lh.googleusercontent.com/...",
+  "headerImage": "https://play-lh.googleusercontent.com/...",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/..."
+  ],
+  "video": "",
+  "contentRating": "Everyone",
+  "adSupported": false,
+  "containsAds": false,
+  "released": "Oct 22, 2014",
+  "lastUpdated": "2025-01-15 00:00:00",
+  "version": "8.8",
+  "description": "A simple calculator app...",
+  "recentChanges": "Bug fixes and performance improvements",
+  "privacyPolicy": "https://policies.google.com/privacy",
+  "reviews": [],
+  "scrapedAt": "2025-06-15T12:00:00.000Z"
+}
