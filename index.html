@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es" class="skin-vector">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensiclopedia iOWiki 🐻‍❄️ - Snippets/Other projects sidebar icons</title>
+    <link rel="stylesheet" href="snippets/other-projects-icons.css">
+    <style>
+        :root {
+            --primary-bg: #f8fafc;
+            --sidebar-bg: #f6f6f6;
+            --border-color: #a7d7f9;
+            --text-color: #202122;
+            --link-color: #0645ad;
+            --link-visited: #0b0080;
+            --card-bg: #ffffff;
+            --accent-banner: #eaf3ff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top header */
+        header.iowiki-header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #c8ccd1;
+            padding: 8px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.35rem;
+            font-weight: bold;
+            color: #202122;
+            text-decoration: none;
+        }
+
+        .header-brand .polar-bear {
+            font-size: 1.6rem;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            max-width: 480px;
+            flex: 1;
+            margin: 0 32px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #72777d;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: #36c;
+            box-shadow: inset 0 0 0 1px #36c;
+        }
+
+        .search-btn {
+            background-color: #f8f9fa;
+            border: 1px solid #72777d;
+            border-radius: 4px;
+            padding: 8px 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .search-btn:hover {
+            background-color: #eaecf0;
+        }
+
+        .user-menu-btn {
+            background: none;
+            border: 1px solid #a2a9b1;
+            border-radius: 4px;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .user-menu-btn:hover {
+            background: #f0f0f0;
+        }
+
+        /* Main layout */
+        .page-container {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            flex: 1;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Sidebar */
+        aside.iowiki-sidebar {
+            padding: 20px 16px;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid #eaecf0;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .portal-section h3 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #54595d;
+            margin: 0 0 10px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #c8ccd1;
+        }
+
+        .portal-section ul {
+            list-style: none;
+            padding: 0 0 0 20px;
+            margin: 0;
+        }
+
+        .portal-section li {
+            margin: 6px 0;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .portal-section a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .portal-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content area */
+        main.iowiki-content {
+            padding: 24px 36px;
+            background-color: var(--card-bg);
+        }
+
+        /* Conference banner */
+        .conference-banner {
+            background-color: var(--accent-banner);
+            border: 1px solid #a3c7ff;
+            border-radius: 6px;
+            padding: 14px 20px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .conference-banner strong {
+            color: #1a56b2;
+        }
+
+        .conference-banner a.register-btn {
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.85rem;
+            margin-left: auto;
+            white-space: nowrap;
+        }
+
+        .conference-banner a.register-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Certificate Viewer Card */
+        .cert-card {
+            background: #ffffff;
+            border: 1px solid #c8ccd1;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .cert-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #36c;
+            padding-bottom: 10px;
+            margin-bottom: 16px;
+        }
+
+        .cert-card-header h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .cert-field {
+            background: #f8f9fa;
+            border: 1px solid #eaecf0;
+            border-radius: 6px;
+            padding: 12px 14px;
+        }
+
+        .cert-field-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #54595d;
+            margin-bottom: 4px;
+        }
+
+        .cert-field-value {
+            font-size: 0.9rem;
+            font-family: monospace;
+            word-break: break-all;
+            color: #202122;
+        }
+
+        /* Article content */
+        .article-title-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+        }
+
+        h1.firstHeading {
+            margin: 0;
+            font-size: 1.85rem;
+            font-weight: normal;
+            font-family: 'Linux Libertine', Georgia, Times, serif;
+        }
+
+        .article-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-link {
+            font-size: 0.85rem;
+            color: #0645ad;
+            text-decoration: none;
+            padding: 4px 8px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+        }
+
+        .action-link:hover {
+            border-color: #a2a9b1;
+            background: #f8f9fa;
+        }
+
+        .metadata-box {
+            background-color: #f8f9fa;
+            border: 1px solid #a2a9b1;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin: 16px 0;
+            display: inline-block;
+            min-width: 320px;
+        }
+
+        .metadata-box dt {
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: #54595d;
+            margin-top: 6px;
+        }
+
+        .metadata-box dd {
+            margin: 0 0 6px 0;
+            font-size: 0.9rem;
+        }
+
+        pre.code-block {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 16px;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+            font-size: 0.85rem;
+            line-height: 1.45;
+            overflow-x: auto;
+        }
+
+        footer {
+            border-top: 1px solid #eaecf0;
+            padding: 20px 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #72777d;
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="iowiki-header">
+        <a href="#" class="header-brand">
+            <span class="polar-bear">🐻‍❄️</span>
+            <span>Ensiclopedia iOWiki</span>
+        </a>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Buscar en Ensiclopedia iOWiki..." value="Snippets/Other projects sidebar icons">
+            <button class="search-btn" onclick="executeSearch()">Buscar</button>
+        </div>
+
+        <div class="user-menu-area">
+            <button class="user-menu-btn" id="certToggleBtn" onclick="toggleCertificate()">
+                <span>🔒 Visualizador de certificados</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <!-- Sidebar -->
+        <aside class="iowiki-sidebar">
+            <div class="portal-section">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#">Página principal</a></li>
+                    <li><a href="#">Portal de la comunidad</a></li>
+                    <li><a href="#">Actualidad</a></li>
+                    <li><a href="#">Cambios recientes</a></li>
+                    <li><a href="#">Página aleatoria</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+
+            <div class="portal-section">
+                <h3>Snippets</h3>
+                <ul>
+                    <li><a href="#">How to use Snippets</a></li>
+                    <li><a href="#">List of Snippets</a></li>
+                </ul>
+            </div>
+
+            <!-- Other Projects Sidebar (Styled by snippets/other-projects-icons.css) -->
+            <div class="portal-section" id="p-wikibase-otherprojects">
+                <h3>Other projects</h3>
+                <ul>
+                    <li class="wb-otherproject-wikipedia"><a class="wb-otherproject-link" href="https://www.wikipedia.org">Wikipedia</a></li>
+                    <li class="wb-otherproject-commons"><a class="wb-otherproject-link" href="https://commons.wikimedia.org">Wikimedia Commons</a></li>
+                    <li class="wb-otherproject-mediawiki"><a class="wb-otherproject-link" href="https://www.mediawiki.org">MediaWiki</a></li>
+                    <li class="wb-otherproject-meta"><a class="wb-otherproject-link" href="https://meta.wikimedia.org">Meta-Wiki</a></li>
+                    <li class="wb-otherproject-species"><a class="wb-otherproject-link" href="https://species.wikimedia.org">Wikispecies</a></li>
+                    <li class="wb-otherproject-wikibooks"><a class="wb-otherproject-link" href="https://www.wikibooks.org">Wikibooks</a></li>
+                    <li class="wb-otherproject-wikidata"><a class="wb-otherproject-link" href="https://www.wikidata.org">Wikidata</a></li>
+                    <li class="wb-otherproject-wikinews"><a class="wb-otherproject-link" href="https://www.wikinews.org">Wikinews</a></li>
+                    <li class="wb-otherproject-wikiquote"><a class="wb-otherproject-link" href="https://www.wikiquote.org">Wikiquote</a></li>
+                    <li class="wb-otherproject-wikisource"><a class="wb-otherproject-link" href="https://www.wikisource.org">Wikisource</a></li>
+                    <li class="wb-otherproject-wikiversity"><a class="wb-otherproject-link" href="https://www.wikiversity.org">Wikiversity</a></li>
+                    <li class="wb-otherproject-wikivoyage"><a class="wb-otherproject-link" href="https://www.wikivoyage.org">Wikivoyage</a></li>
+                    <li class="wb-otherproject-wiktionary"><a class="wb-otherproject-link" href="https://www.wiktionary.org">Wiktionary</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="iowiki-content">
+            <!-- Conference Announcement -->
+            <div class="conference-banner">
+                <div>
+                    The <strong>MediaWiki Users and Developers Conference Fall 2026</strong> will take place November 11-13 in Ljubljana, Slovenia.
+                </div>
+                <a href="#" class="register-btn">Register for the conference today!</a>
+            </div>
+
+            <!-- Certificate Viewer (Visualizador de certificados) -->
+            <section id="certViewer" class="cert-card">
+                <div class="cert-card-header">
+                    <h2>
+                        <span>🔒</span> Visualizador de certificados: <code style="margin-left: 8px;">www.google.com</code>
+                    </h2>
+                    <span style="font-size: 0.85rem; color: #2e7d32; font-weight: bold; background: #e8f5e9; padding: 4px 8px; border-radius: 4px;">✔ VÁLIDO</span>
+                </div>
+
+                <div class="cert-grid">
+                    <div class="cert-field">
+                        <div class="cert-field-title">Emitido a (Nombre común / CN)</div>
+                        <div class="cert-field-value" id="certCN">www.google.com</div>
+                    </div>
+
+                    <div class="cert-field">
+                        <div class="cert-field-title">Número de serie</div>
+                        <div class="cert-field-value" id="certSerial">D 47:DB:E4:E1:85:9A:DA:DC:0A:4D:8B:CA:DE D :BC:70:BD</div>
+                    </div>
+
+                    <div class="cert-field">
+                        <div class="cert-field-title">Proporcionada por (Autoridad emisora)</div>
+                        <div class="cert-field-value" id="certIssuer">WE2 — Organización (O): Google Trust Services</div>
+                    </div>
+
+                    <div class="cert-field">
+                        <div class="cert-field-title">Período de validez</div>
+                        <div class="cert-field-value" id="certValidity">Emitido el 7 oct. 2026 — Vence el 30 dic. 2026</div>
+                    </div>
+
+                    <div class="cert-field" style="grid-column: 1 / -1;">
+                        <div class="cert-field-title">Huellas digitales SHA-256 (Certificado)</div>
+                        <div class="cert-field-value" id="certFingerprint">83 B9 C3 FF B5 3E D1 EE F2 84 93 24 F5 36 43 0B 19 1D D5 BD 5F 98 D3 F6 43 E3 97 88 4A C9 C6 CB</div>
+                    </div>
+
+                    <div class="cert-field" style="grid-column: 1 / -1;">
+                        <div class="cert-field-title">Clave pública</div>
+                        <div class="cert-field-value" id="certPublicKey">BO DO C5 80 D2 69 3A C9 FF 7D 53 25 C6 69 7D CE 58 26 4A 57 FF 37 11 E8 B9 6E E 3E 09 82 21 DB A5</div>
+                    </div>
+
+                    <div class="cert-field" style="grid-column: 1 / -1;">
+                        <div class="cert-field-title">Extensiones: Nombre alternativo del sujeto del certificado</div>
+                        <div class="cert-field-value" id="certSAN">DNS: www.google.com</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article Title & Actions -->
+            <div class="article-title-row">
+                <h1 id="firstHeading" class="firstHeading">Snippets/Other projects sidebar icons</h1>
+                <div class="article-actions">
+                    <a href="#" class="action-link">Save</a>
+                    <a href="#" class="action-link">Edit</a>
+                    <a href="#" class="action-link">Download PDF</a>
+                </div>
+            </div>
+
+            <div style="font-size: 0.85rem; color: #54595d; margin-bottom: 16px;">
+                &lt; <a href="#" style="color: #0645ad;">Snippets</a>
+            </div>
+
+            <!-- Snippet Metadata -->
+            <dl class="metadata-box">
+                <dt>Language(s):</dt>
+                <dd>CSS</dd>
+                <dt>Compatible with:</dt>
+                <dd>MediaWiki 1.22+ (Vector; Monobook; Modern)</dd>
+            </dl>
+
+            <h3>Description</h3>
+            <p>Project icons on the "Other projects" sidebar. Includes icons for high definition displays.</p>
+
+            <h3>CSS</h3>
+            <pre class="code-block" id="cssSnippetDisplay">/* Snippet: Other projects sidebar icons */
+#p-wikibase-otherprojects li:before {
+    float: left;
+    margin-left: -17px;
+    margin-bottom: -2px;
+    height: 17px;
+    content: '';
+    display: block;
+    width: 11px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.wb-otherproject-link[class*="badge-"]:before {
+    background: transparent;
+}
+
+#p-wikibase-otherprojects li.wb-otherproject-wikipedia:before {
+    margin-top: 3px;
+    margin-left: -18px;
+    width: 13px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAQAAACIL71EAAAAiUlEQVQIHQXBvQqBAQAAwFOUFOlbGEzKLqXYxORnk02RYlAGyWAwWa1GsilvYJAYsBksJqvXcEffx1ne0k9Xy11H1c0YFk5iAmc9ZQPkTEUg66WOvoelFLqKAGsHYYGnFdImogAFbyVJR1eBpgoAYXsbbQ0XcyMJAKj5mgkZ+moCAHE7eWRspYA/Fw4co/jvEPEAAAAASUVORK5CYII=');
+}
+/* ... Ver snippets/other-projects-icons.css para la regla completa ... */</pre>
+        </main>
+    </div>
+
+    <footer>
+        <p>Ensiclopedia iOWiki 🐻‍❄️ — Contenido compatible con MediaWiki. Licencia Creative Commons Atribución-CompartirIgual.</p>
+    </footer>
+
+    <script>
+        function toggleCertificate() {
+            const viewer = document.getElementById('certViewer');
+            if (viewer.style.display === 'none') {
+                viewer.style.display = 'block';
+            } else {
+                viewer.style.display = 'none';
+            }
+        }
+
+        function executeSearch() {
+            const val = document.getElementById('searchInput').value.trim();
+            if (val) {
+                alert('Búsqueda en Ensiclopedia iOWiki: ' + val);
+            }
+        }
+    </script>
+</body>
+</html>
