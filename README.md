@@ -1,4 +1,4 @@
-.gitignore
+<~•~{-1}°Gen•{§•0k•§}•iO°{+1}~•~>.gitignore<~•~{-1}°Gen•{§•0k•§}•iO°{+1}~•~>
 # Archivos de la aplicación compilada
 *.apk
 *.ap_
